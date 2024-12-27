@@ -1,5 +1,7 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  // Configuration options
+  build: {
+    outDir: 'dist', // The output directory for your production build
+  },
 });
