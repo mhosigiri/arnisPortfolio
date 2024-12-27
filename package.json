@@ -1,10 +1,16 @@
 {
   "dependencies": {
     "gsap": "^3.12.5",
+    "latest": "^0.2.0",
     "npm": "^11.0.0",
     "three": "^0.171.0"
   },
   "devDependencies": {
     "vite": "^6.0.6"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   }
 }
