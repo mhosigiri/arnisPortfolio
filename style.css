@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    height: 300vh;
+    background-color: black;
+}
+.webgl {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+
+nav {
+    color: #fff;
+    z-index: 2;
+    position: fixed;
+    padding: 4rem 8rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+}
+
+.content-wrapper{
+    position: relative;
+    width: 50%;
+    min-height: 300vh;
+    padding: 0 5%;
+    margin-left: 0;
+}
+
+.title{
+    color: #fff;
+    z-index: 2;
+    position: fixed;
+    font-size: 2rem;
+    font-family: "Lexend", serif;
+    font-weight: 400;
+    font-style: normal;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 50%);
+    opacity: 0;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+.paragraph{
+    color: #fff;
+    z-index: 2;
+    position: fixed;
+    font-size: 1.2rem;
+    font-family: "Lexend", serif;
+    font-weight: 100;
+    font-style: normal;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, 50%);
+    opacity: 0;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.columns-container{
+    position: fixed;
+    top: 100vh;
+    left: 0;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2rem;
+    z-index: 2;
+    opacity: 0;
+    padding: 0 5%;
+}
+
+.column {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 30px;
+    transform: translateX(-50px);
+    opacity: 0;
+}
+
+.column-content {
+    color: white;
+}
+
+.column-content h2 {
+    font-family: "Lexend", serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.column-content p {
+    font-family: "Lexend", serif;
+    font-weight: 100;
+    line-height: 1.6;
+}
+
+.location-content {
+    min-height: 100vh;
+    padding: 100px 5%;
+    color: white;
+    background: linear-gradient(to bottom, #000000, #1a1a1a);
+}
+
+.location-details {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+.location-content h1 {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: "Lexend", serif;
+}
+
+.location-details h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family: "Lexend", serif;
+}
+
+.location-details p {
+    font-family: "Lexend", serif;
+    font-weight: 100;
+    line-height: 1.6;
+}
+
+@media(max-width: 480px){
+    body {
+        height: 300vh;
+        background-color: black;
+    }
+    nav {
+        padding: 2rem 4rem; /* Reduce padding for smaller screens */
+    }
+    nav ul {
+        gap: 2rem; /* Smaller gap between nav links */
+    }
+    nav a {
+        font-size: 0.9rem; /* Smaller font size for links */
+    }
+    
+    .content-wrapper {
+        width: 90%; /* Adjust width to fit smaller screens */
+        padding: 0 2%;
+    }
+    .title {
+        font-size: 1.5rem; /* Smaller title text */
+        padding: 0 5%; /* Add some padding for better readability */
+    }
+    .paragraph {
+        font-size: 1rem; /* Reduce font size for paragraph */
+        padding: 0 5%;
+    }
+    .columns-container {
+        width: 100%; /* Full width for columns container */
+        padding: 0 2%; /* Smaller padding */
+    }
+    .column {
+        padding: 20px; /* Reduce padding for smaller columns */
+        transform: translateX(-30px); /* Adjust transform for better fit */
+    }
+    .column-content h2 {
+        font-size: 1.5rem; /* Reduce heading size */
+    }
+    .column-content p {
+        font-size: 0.9rem; /* Smaller text for paragraphs */
+    }
+    .location-content {
+        padding: 50px 5%; /* Reduce padding */
+    }
+    .location-content h1 {
+        font-size: 2.5rem; /* Smaller heading size */
+    }
+    .location-details {
+        padding: 1.5rem; /* Smaller padding for details */
+    }
+    .location-details h2 {
+        font-size: 1.5rem; /* Reduce subheading size */
+    }
+    .location-details p {
+        font-size: 0.9rem; /* Adjust paragraph text size */
+    }
+}
