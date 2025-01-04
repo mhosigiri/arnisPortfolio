@@ -3,9 +3,9 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import getStarfield from "./src/getStarfield.js";
-import earthImg from './images/earth.jpg';
-import nightLightsImg from './images/eartf.jpg';
-import cloudsImg from './images/clouds.jpg';
+import earthImg from "./images/earth.jpg";
+import nightLightsImg from "./images/eartf.jpg";
+import cloudsImg from "./images/clouds.jpg";
 
 //Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
