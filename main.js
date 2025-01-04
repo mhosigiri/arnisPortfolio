@@ -17,9 +17,9 @@ scene.add(pivot);
 
 // Texture Loader
 const textureLoader = new THREE.TextureLoader();
-const earthTexture = textureLoader.load('earth.jpg');
-const nightLightsTexture = textureLoader.load('eartf.jpg');
-const cloudTexture = textureLoader.load('clouds.jpg');
+const earthTexture = textureLoader.load('./earth.jpg');
+const nightLightsTexture = textureLoader.load('./eartf.jpg');
+const cloudTexture = textureLoader.load('./clouds.jpg');
 
 //My locations
 
