@@ -3,9 +3,6 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import getStarfield from "./src/getStarfield.js";
-import earthImg from "./assets/images/earth.jpg";
-import nightLightsImg from "./assets/images/eartf.jpg";
-import cloudsImg from "./assets/images/clouds.jpg";
 
 //Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
@@ -19,9 +16,9 @@ scene.add(pivot);
 
 // Texture Loader
 const textureLoader = new THREE.TextureLoader();
-const earthTexture = textureLoader.load(earthTextureUrl);
-const nightLightsTexture = textureLoader.load(nightLightsTextureUrl);
-const cloudTexture = textureLoader.load(cloudTextureUrl);
+const earthTexture = textureLoader.load('/images/earth.jpg');
+const nightLightsTexture = textureLoader.load('/images/eartf.jpg');
+const cloudTexture = textureLoader.load('/images/clouds.jpg');
 
 //My locations
 
