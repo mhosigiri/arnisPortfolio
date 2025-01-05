@@ -1,4 +1,5 @@
 import * as THREE from "three";
+import { FontLoader } from "three/examples/jsm/Addons.js";
 
 export default function getStarfield({ numStars = 500, sprite } = {}) {
   function randomSpherePoint() {
