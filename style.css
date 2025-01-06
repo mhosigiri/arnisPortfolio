@@ -49,14 +49,15 @@ nav ul {
 
 .title{
     color: #fff;
-    z-index: 1;
+    mix-blend-mode: difference;
+    z-index: 2;
     position: fixed;
-    font-size: 2rem;
-    font-family: "Rubik Vinyl", serif;
-    font-weight: 400;
+    font-size: 4rem;
+    font-family: "Lexend", serif;
+    font-weight: 800;
     font-style: normal;
     left: 50%;
-    top: 50%;
+    top: 70%;
     transform: translate(-50%, 50%);
     opacity: 0;
     width: 100%;
@@ -72,7 +73,7 @@ nav ul {
     font-weight: 100;
     font-style: normal;
     left: 50%;
-    top: 60%;
+    top: 92%;
     transform: translate(-50%, 50%);
     opacity: 0;
     width: 100%;
@@ -119,6 +120,14 @@ nav ul {
     font-weight: 100;
     line-height: 1.6;
 }
+.column-content a{
+    text-decoration: none;
+    color: #ADD8E6;
+    font-weight: bold;
+    font-family: "Lexend", serif;
+    font-weight: 100;
+    line-height: 1.6;
+}
 
 .location-content {
     min-height: 100vh;
@@ -153,6 +162,26 @@ nav ul {
     font-family: "Lexend", serif;
     font-weight: 100;
     line-height: 1.6;
+}
+.section{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+.section h3{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-family: "Lexend", serif;
+    font-weight: 200;
+}
+.section p{
+    font-family: "Lexend", serif;
+    font-weight: 100;
+    line-height: 1.6;
+    line-height: 2;
 }
 
 @media(max-width: 480px){
