@@ -3,11 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explore</title>
+    <title>Programming Skills Explorer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <link href="explore.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        
-    </div>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="nav-title"><a href="index.html">Arnis KC</a></h1>
+        </div>
+    </nav>
+
+    <main class="main-container">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <h2 class="hero-title">My Programming Progress</h2>
+            <p class="hero-text">
+                Explore my programming expertise across different languages and technologies. 
+                The visualizations below represent my proficiency levels and years of experience.
+            </p>
+        </section>
+
+        <!-- Charts Grid -->
+        <div class="charts-grid">
+            <!-- Bar Chart -->
+            <div class="chart-container">
+                <h3 class="chart-title">Language Proficiency</h3>
+                <canvas id="languageChart"></canvas>
+            </div>
+
+            <!-- Skills Grid -->
+            <div class="chart-container">
+                <h3 class="chart-title">Skill Overview</h3>
+                <div class="skills-grid" id="skillsGrid">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="explore.js"></script>
 </body>
 </html>

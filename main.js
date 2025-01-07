@@ -272,10 +272,10 @@ gsap.set([title, paragraph], {
   y: 20,
 });
 gsap.to([title, paragraph], {
-  opacity: 1,
+  opacity: 0.8,
   y: 0,
-  duration: 1,
-  delay: 0.5,
+  duration: 0.6,
+  delay: 0.2,
   ease: "power2.out",
 });
 
