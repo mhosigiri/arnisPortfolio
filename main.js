@@ -190,15 +190,15 @@ const mouse = new THREE.Vector2();
 const clickableObjects = {
     coneTexas: {
         object: coneTexas,
-        url: 'texas.html' // Create this page for Texas content
+        url: '/texas.html' // Create this page for Texas content
     },
     coneNepal: {
         object: coneNepal,
-        url: 'nepal.html' // Create this page for Nepal content
+        url: '/nepal.html' // Create this page for Nepal content
     },
     coneJapan: {
         object: coneJapan,
-        url: 'japan.html' // Create this page for Japan content
+        url: '/japan.html' // Create this page for Japan content
     }
 };
 
