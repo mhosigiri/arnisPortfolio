@@ -75,7 +75,7 @@ function createSkillsGrid() {
       const skillDiv = document.createElement('div');
       skillDiv.className = 'skill-card';
       
-      const techList = techs.map(tech => `<span class="tech-tag">${tech}</span>`).join('');
+      const techList = techs.map(tech => `<span class="tech-tag">${tech}</span>`).join(', ');
       
       skillDiv.innerHTML = `
           <h4 class="skill-card-title">${lang}</h4>
