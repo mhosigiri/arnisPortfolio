@@ -1,12 +1,12 @@
 /* Base styles */
 :root {
-    --primary-color: #4f46e5;
-    --secondary-color: #3b82f6;
-    --background-color: #f3f4f6;
-    --text-primary: #1f2937;
-    --text-secondary: #4b5563;
-    --card-background: #ffffff;
-    --success-color: #10b981;
+    --primary-color: #302f3a;
+    --secondary-color: #353a41;
+    --background-color: #000;
+    --text-primary: #f1f1f1;
+    --text-secondary: #a5c2eb;
+    --card-background: #3b3b3b;
+    --success-color: #b5f1dd;
 }
 
 * {
